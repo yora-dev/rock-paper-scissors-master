@@ -1,0 +1,51 @@
+:root {
+  --Scisor-500: hsl(39, 89%, 49%);
+  --Scisor-600: hsl(28, 76%, 44%);
+  --bg-500: hsl(230, 89%, 62%);
+  --bg-700: hsl(229, 64%, 46%);
+  --Rock-600: hsl(349, 71%, 52%);
+  --Rock-800: hsl(347, 75%, 35%);
+  --Paper-600: hsl(261, 73%, 60%);
+  --Paper-700: hsl(261, 51%, 44%);
+  --Light-blue-400: hsl(189, 59%, 53%);
+  --Light-blue-500: hsl(194, 58%, 42%);
+
+  --dark-text: hsl(229, 25%, 31%);
+  --score-text: hsl(229, 64%, 46%);
+  --header-outline: hsl(246, 11%, 37%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 48%, 15%));
+}
+
+.rules-container {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rules__header {
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: var(--header-outline);
+  margin-bottom: 6rem;
+}
+
+.rules__img {
+  margin-bottom: 8rem;
+}
