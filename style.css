@@ -238,6 +238,28 @@ body {
   color: var(--Rock-800);
 }
 
+.winner-effect {
+  animation: winner-glow 1.5s infinite alternate;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-out;
+}
+@keyframes winner-glow {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.4),
+      0 0 0 10px rgba(0, 255, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px 15px rgba(0, 255, 0, 0.9),
+      0 0 0 20px rgba(0, 255, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.4),
+      0 0 0 10px rgba(0, 255, 0, 0.1);
+  }
+}
+
+/* Use a vibrant, congratulatory color (like #00FF00 for green) */
+
 @media screen and (min-width: 1024px) {
   body {
     height: 100vh;
@@ -338,5 +360,6 @@ body {
   .computer-picked-text {
     order: -1;
     margin-bottom: 2rem;
+    font-size: 1.8rem;
   }
 }
