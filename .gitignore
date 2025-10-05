@@ -3,6 +3,7 @@
 *.fig
 *.xd
 ./style-guide.md
+/design
 
 
 # Dependencies

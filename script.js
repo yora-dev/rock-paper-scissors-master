@@ -59,9 +59,11 @@ function getWinner(computerChoice, userChoice) {
     resultMessage.innerHTML = "YOU WIN";
     userScore++;
     score.innerHTML = userScore;
+    subPick[0].querySelector('.choice-wrapper').classList.add('winner-effect');
   } else {
     resultMessage.innerHTML = "YOU LOSE";
     userScore--;
     score.innerHTML = userScore;
+    subPick[1].querySelector('.choice-wrapper').classList.add('winner-effect');
   }
 }
