@@ -34,10 +34,6 @@ body {
   position: relative;
 }
 
-.overlay {
-  display: none;
-}
-
 .rules-container {
   background-color: white;
   height: 100vh;
@@ -113,7 +109,7 @@ body {
   background-position: center;
   place-items: center;
   column-gap: 8rem;
-  display: none;
+  margin-top: 4rem;
 }
 
 .paper,
@@ -172,7 +168,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* display: none; */
+  display: none;
 }
 
 .picked-chioce-container {
@@ -201,6 +197,7 @@ body {
   letter-spacing: 1px;
   white-space: nowrap;
   margin-top: 1.8rem;
+  margin-bottom: 2rem;
 }
 
 .result-container {

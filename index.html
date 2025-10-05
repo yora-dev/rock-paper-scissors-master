@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="overlay">
@@ -34,38 +34,32 @@
         <img src="images/logo.svg" alt="" class="logo" />
         <div class="score-container">
           <p class="score--text">SCORE</p>
-          <p class="score--value">12</p>
+          <p class="score--value">0</p>
         </div>
       </div>
       <div class="choice-container">
-        <div class="choice-wrapper wrapper-paper">
+        <div class="choice-wrapper wrapper-paper" data-value="paper">
           <img src="images/icon-paper.svg" alt="" class="paper" />
         </div>
-        <div class="choice-wrapper wrapper-scissors">
+        <div class="choice-wrapper wrapper-scissors" data-value="scissors">
           <img src="images/icon-scissors.svg" alt="" class="scissors" />
         </div>
-        <div class="choice-wrapper wrapper-rock">
+        <div class="choice-wrapper wrapper-rock" data-value="rock">
           <img src="images/icon-rock.svg" alt="" class="rock" />
         </div>
       </div>
       <div class="picked-container">
-        <div div class="picked-chioce-container">
+        <div class="picked-chioce-container">
           <div class="sub-pick">
-            <div class="choice-wrapper wrapper-paper">
-              <img src="images/icon-paper.svg" alt="" class="paper" />
-            </div>
             <p class="user-picked-text">YOU PICKED</p>
           </div>
           <div class="sub-pick">
-            <div class="choice-wrapper wrapper-scissors">
-              <img src="images/icon-scissors.svg" alt="" class="scissors" />
-            </div>
             <p class="computer-picked-text">THE HOUSE PICKED</p>
           </div>
         </div>
 
         <div class="result-container">
-          <p class="result">YOU LOSE</p>
+          <p class="result"></p>
           <button class="btn">PLAY AGAIN</button>
         </div>
       </div>
