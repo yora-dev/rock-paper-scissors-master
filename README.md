@@ -30,8 +30,6 @@ Users should be able to:
 
 ![](./preview.jpg)
 
-_(Replace this with your actual project screenshot)_
-
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/rock-paper-scissor-game-gMxHhIUrFw
