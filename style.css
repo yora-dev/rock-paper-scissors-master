@@ -20,6 +20,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
+  transition: all 0.35s;
 }
 
 html {
@@ -28,6 +29,7 @@ html {
 
 body {
   background: radial-gradient(circle, hsl(214, 47%, 23%), hsl(237, 48%, 15%));
+  height: 100%;
 }
 
 .rules-container {
@@ -37,15 +39,123 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .rules__header {
   font-weight: 600;
   font-size: 2.8rem;
-  color: var(--header-outline);
+  color: var(--dark-text);
   margin-bottom: 6rem;
 }
 
 .rules__img {
   margin-bottom: 8rem;
+}
+
+.step-one {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one__header {
+  border: 2px solid var(--header-outline);
+  border-radius: 0.8rem;
+  display: flex;
+  margin-bottom: 14rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: 10rem;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.score-container {
+  color: var(--dark-text);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.6rem;
+}
+
+.score--text {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.score--value {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.choice-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  place-items: center;
+  column-gap: 8rem;
+}
+
+.paper,
+.scissors,
+.rock {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.choice-wrapper {
+  width: 10rem;
+  height: 10rem;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.wrapper-paper {
+  background: linear-gradient(to bottom, var(--Paper-600), var(--Paper-700));
+  grid-column: 1 / span 1;
+  margin-top: -10rem;
+}
+.wrapper-scissors {
+  background: linear-gradient(to bottom, var(--Scisor-500), var(--Scisor-600));
+  grid-column: 2 / span 1;
+  margin-top: -10rem;
+}
+.wrapper-rock {
+  background: linear-gradient(to bottom, var(--Rock-600), var(--Rock-800));
+  grid-column: 1 / span 2;
+}
+
+.one__rules {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.8rem 3rem;
+  border: 2px solid var(--header-outline);
+  color: white;
+  border-radius: 0.8rem;
+  letter-spacing: 1.2px;
+  margin-top: 12rem;
+  cursor: pointer;
+}
+
+.one__rules:hover {
+  font-weight: 700;
 }
