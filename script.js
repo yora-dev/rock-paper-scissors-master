@@ -62,7 +62,7 @@ function getWinner(computerChoice, userChoice) {
     subPick[0].querySelector('.choice-wrapper').classList.add('winner-effect');
   } else {
     resultMessage.innerHTML = "YOU LOSE";
-    
+    if(userScore>0) score--;
     score.innerHTML = userScore;
     subPick[1].querySelector('.choice-wrapper').classList.add('winner-effect');
   }
